@@ -1,0 +1,711 @@
+@font-face {
+    font-family: Exo2;
+    src: url(fonts/Exo2-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: Exo2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    height: 100vh;
+    
+}
+header {
+    padding: 0;
+    margin: 0;
+}
+
+/* Добавляем стили для вертикального меню */
+nav {
+    background-color: #1f1e2b;
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+}
+.menu-desk{
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.fon-fixed {
+    background-image: url(img/diablo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+main {
+    padding: 20px;
+    margin-left: 240px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    display: none;
+    background-color: #1f1e2b;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#logo {
+    display: block;
+    width: 150px;/* Задайте ширину логотипа по вашему усмотрению */
+    height: 150px;
+    margin-bottom: 20px; /* Добавим отступ между логотипом и пунктами меню */
+    margin: 0 auto; /* Центрируем логотип с помощью автоматических отступов по горизонтали */
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #f2a341;
+}
+
+.icon-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}
+.icon-footer button {
+    background-color: #1f1e2b;
+    color: #fff;
+    border: none;
+    margin: 0 10px 0;
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icon-footer button:hover {
+    background-color: #f2a341;
+}
+.icon-buttons {
+    position: fixed;
+    bottom: 20px;
+}
+
+.icon-buttons button {
+    background-color: #1f1e2b;
+    color: #fff;
+    border: none;
+    padding: 13.6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.icon-buttons button:hover {
+    background-color: #f2a341;
+}
+#main-content {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+.container{
+    height: 100%;
+    margin-left: 240px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.container-menu{
+    height: 100%;
+    margin-left: 240px;
+    display: flex;
+
+}
+.fon-text {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    align-items: center;
+    flex-direction: column;
+}
+.fon-text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    color: #f2a341;
+    margin-top: -5px;
+
+}
+.fon-text p {
+    font-size: 90px;
+    font-weight: 700;
+    margin: 10px;
+    text-shadow: 0px 0px 12px rgb(0 0 0 / 69%);
+}
+.rectangle-box {
+    background-color: #1f1e2b;
+    padding: 15px;
+    border-radius: 100px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+.fon-button {
+    justify-content: center;
+    flex-direction: row;
+    display: flex !important;
+    padding-bottom: 40px;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    
+}
+
+.fon-button button {
+    background-color: white;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fon-button button:hover {
+    background-color: #f2a341;
+}
+.infodiv {
+    background-color: #f2f2f2;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+.infodiv p{
+    line-height: 1.6;
+    color: #47476b;
+}
+.infodiv h2{
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+}
+.contactdiv {
+    background-color: #f2f2f2;
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contactdiv p{
+    line-height: 1.6;
+    color: #47476b;
+    text-align: left;
+}
+.contactdiv h2{
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+}
+.contact-info{
+    width: 50%;
+}
+.contact-forma{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+.row-contact{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+}
+.number{
+    display: flex;
+    align-items: center;
+    color: #666;
+    padding: 10px;
+    white-space: nowrap;
+}
+.imgcenter{
+    text-align: center;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.product {
+    background-color: #f2f2f2;
+    width: 25%; /* Устанавливаем ширину товара в одном ряду */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup{
+    display: none;
+    
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    color: #333;
+}
+
+.product p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e44d26;
+}
+
+.pod-menu {
+    display: flex;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 0 11px 0px rgb(0 0 0 / 25%);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+}
+.pod-menu-name {
+    display: flex;
+    flex-direction: column;
+    
+}
+.pod-menu-name h2{
+margin: 0 0 10px 0;
+color: #47476b;
+}
+.pod-menu-name p{
+margin: 0 0 0 0;
+color: #999999;
+}
+.pod-menu-price {
+    display: flex;
+    align-items: center;
+    color: #e44d26;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.popup-menu{
+    display: none;
+}
+.main-container {
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 80px auto;
+}
+
+.horizontal-menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-right-style: outset;
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: #47476b;
+    padding: 5px;
+    transition: background-color 0.3s;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.horizontal-menu a:hover {
+    color: #f2a341;
+    ;
+}
+
+.content-area {
+    animation: fadeInOut 0.5s ease-out;
+    padding-left: 20px;
+}
+
+.roll-vibor {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roll-sh{
+    display: flex;
+    align-items: center;
+    color: #e44d26;
+    font-weight: bold;
+    padding: 5px;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    border-radius: 10px;
+
+}
+.kol-sh{
+    white-space: nowrap;
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    color: #47476b;
+}
+.box-price{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.box-contact{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: #47476b;
+    font-weight: bold;
+    width: 90px;
+}
+.info-rov{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+.feedback-form {
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    width: 100%;
+    color: #fff8f8;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Exo2';
+    color: #47476b;
+}
+.btn2{
+    padding: 10px;
+    background-color: #47476b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Exo2;
+}
+.btn2:hover {
+    background-color: #f2a341;
+    ;
+}
+.info-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Медиа-запрос для адаптации макета на мобильных устройствах */
+@media only screen and (max-width: 768px) {
+    .product {
+        width: 100%; /* На мобильных устройствах ширина товара будет 100% */
+    }
+    main {
+        padding: 20px;
+        margin-left: 0;
+    }
+    .horizontal-menu {
+        flex-direction: row;
+        align-items: center;
+        border-bottom-style: outset;
+        border-right-style: none;
+    }
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-area {
+        animation: fadeInOut 0.5s ease-out;
+        padding-left: 0;
+        
+    }
+    .horizontal-menu a {
+        margin-bottom: 10px;
+    }
+    }
+
+
+@media (max-width: 768px){
+    .popup{
+        display: flex !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    .fon-text h1 {
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+        margin-top: -5px;
+    
+    }
+    .fon-text p {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 10px;
+        text-shadow: 0px 0px 12px rgb(0 0 0 / 69%);
+    }
+
+    nav {
+        display:flex;
+        background-color: #1f1e2b;
+        padding: 0 !important;
+        width: 100%;
+        height: 80px;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: flex;
+        
+        position: fixed;
+    }
+    
+    .popup-menu {
+        display: flex !important;
+        flex-direction: column;
+        background-color: #1f1e2b;
+        color: #ffffff;
+        padding: 10px;
+        z-index: -1;
+        margin-top: -245px;
+        transition: margin-top 1s;
+    }
+
+    .stobi-bilo{
+        background-color: #1f1e2b;
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .popup-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        padding: 8px;
+        z-index: -1;
+        transition: background-color 0.3s;
+    }
+
+    .popup-menu a:hover {
+        background-color: #555;
+    }
+    #logo {
+        display: block;
+        width: 60px;/* Задайте ширину логотипа по вашему усмотрению */
+        height: 60px;
+        padding: 10px;
+        margin: 0 auto;
+        margin-left: 10px; /* Центрируем логотип с помощью автоматических отступов по горизонтали */
+        cursor: pointer;
+    }
+    .icon-buttons{
+        display: none !important;
+    }
+    .menu-desk{
+        display: none !important;
+    }
+    footer {
+        display: flex !important;
+    }
+    .fon-button {
+        justify-content: center;
+        flex-direction: row;
+        display: flex !important;
+        padding-bottom: 100px;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+    }
+    .container{
+        height: 100%;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        margin: 22px 30px 0 0;
+        background-color: #1f1e2b;
+    }
+    
+    #bar1, #bar2, #bar3 {
+        background-color: #f2a341;
+        height: 4px;
+        width: 30px;
+        margin: 3px 0;
+        transition: width 0.4s;
+        transition: 0.4s; /* Добавляем анимацию перехода */
+    }
+
+    .btn.active #bar1 {
+        transform: rotate(-45deg) translate(-6px, 7px);
+    }
+    
+    .btn.active #bar2 {
+        opacity: 0;
+    }
+    
+    .btn.active #bar3 {
+        transform: rotate(45deg) translate(-6px, -7px);
+    }
+    .pod-menu {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .roll-vibor {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .pod-menu-name h2 {
+        text-align: center;
+    }
+    .pod-menu-name p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .pod-menu-price {
+        justify-content: center;
+    }
+    .contactdiv {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contact-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-forma {
+        width: 100%;
+        padding-left: 0;
+    }
+}

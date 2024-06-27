@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - BonaFide Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body id="main-content">
+    <header>
+    <nav>
+        <div class="popup">
+            <img src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+            <div class="stobi-bilo"></div>
+            <button class="btn" onclick="toggleMenu()">
+                <span id="bar1"></span>
+                <span id="bar2"></span>
+                <span id="bar3"></span>
+            </button>
+        
+                
+            </div>
+            <div class="popup-menu" id="popupMenu">
+                <a href="index.html">Главная</a>
+                <a href="menu.html">Меню</a>
+                <a href="pizza.html">Пиццы</a>
+                <a href="info.html">О нас</a>
+                <a href="contact.html">Контакты</a>
+            </div>
+        </div>
+        <img class="menu-desk" src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+        <a class="menu-desk" href="index.html">Главная</a>
+        <a class="menu-desk" href="menu.html">Меню</a>
+        <a class="menu-desk" href="pizza.html">Пиццы</a>
+        <a class="menu-desk" href="info.html">О нас</a>
+        <a class="menu-desk" href="contact.html">Контакты</a>
+
+        <div class="icon-buttons">
+            <button>
+                <img width="20px" height="20px" src="icon/Vk-white.svg"/>
+            </button>
+            <button>
+                <img width="20px" height="20px" src="icon/telegram-white.svg"/>
+            </button>
+            <button>
+                <img width="20px" height="20px" src="icon/tik-tok-white.svg"/>
+            </button>
+            <button>
+                <img width="20px" height="20px" src="icon/youtube-white.svg"/>
+            </button>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="fon-text">
+        <p>Лучшая</p>
+    <div class="rectangle-box">
+        <h1>Пицца</h1>
+    </div>
+    <p>в этом городе</p>
+    </div>
+    <div class="fon-button">
+        <button onclick="changeBackground(1)"><img width="40px" height="40px" src="icon/red.png"/></button>
+        <button onclick="changeBackground(2)"><img width="40px" height="40px" src="icon/orange.png"/></button>
+        <button onclick="changeBackground(3)"><img width="40px" height="40px" src="icon/green.png"/></button>
+    </div>
+</div>
+
+    <footer>
+        <div class="icon-footer">
+            <button>
+                <img width="25px" height="25px" src="icon/Vk-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/telegram-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/tik-tok-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/youtube-white.svg"/>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>

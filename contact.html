@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - BonaFide Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <img class="fon-fixed">
+    <header>
+        <nav>
+            <div class="popup">
+                <img src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+                <div class="stobi-bilo"></div>
+                <button class="btn" onclick="toggleMenu()">
+                    <span id="bar1"></span>
+                    <span id="bar2"></span>
+                    <span id="bar3"></span>
+                </button>
+            
+                    
+                </div>
+                <div class="popup-menu" id="popupMenu">
+                    <a href="index.html">Главная</a>
+                    <a href="menu.html">Меню</a>
+                    <a href="pizza.html">Пиццы</a>
+                    <a href="info.html">О нас</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+            <img class="menu-desk" src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+            <a class="menu-desk" href="index.html">Главная</a>
+            <a class="menu-desk" href="menu.html">Меню</a>
+            <a class="menu-desk" href="pizza.html">Пиццы</a>
+            <a class="menu-desk" href="info.html">О нас</a>
+            <a class="menu-desk" href="#">Контакты</a>
+    
+            <div class="icon-buttons">
+                <button>
+                    <img width="20px" height="20px" src="icon/Vk-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/telegram-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/tik-tok-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/youtube-white.svg"/>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contactdiv">
+            <div class="contact-info">
+
+                <h2>Адрес:</h2>
+                
+                <div class="info-rov">
+                    <div class="row-contact">
+                        <div class="box-contact">Город</div>
+                        <div class="number">Омск</div>
+                    </div>
+
+                    <div class="row-contact">
+                        <div class="box-contact">Улица</div>
+                        <div class="number">Заверяева, 135</div>
+                    </div>
+
+                </div>
+
+                <h2>Контакты:</h2>
+
+                <div class="info-rov">
+                    <div class="row-contact">
+                        <div class="box-contact">Телефон</div>
+                        <div class="number">+7 (999) 999 99 99</div>
+                    </div>
+
+                    <div class="row-contact">
+                        <div class="box-contact">Email</div>
+                        <div class="number">bonafide55@gmail.com</div>
+                    </div>
+
+                    <div class="row-contact">
+                        <div class="box-contact">Telegram</div>
+                        <div class="number">@BonaFide55</div>
+                    </div>
+                </div>
+                    
+                <h2>Часы работы:</h2>
+
+                <div class="info-rov">
+                    <div class="row-contact">
+                        <div class="box-contact">Пн-Пт</div>
+                        <div class="number">8:00 – 23:00</div>
+                    </div>
+
+                    <div class="row-contact">
+                        <div class="box-contact">Суббота</div>
+                        <div class="number">8:00 – 1:00</div>
+                    </div>
+
+                    <div class="row-contact">
+                        <div class="box-contact">Воскресенье</div>
+                        <div class="number">Закрыто</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-forma">
+                <div class="feedback-form">
+                    <h2>Обратная связь</h2>
+                    <div class="form">
+                       
+                        <input placeholder="Имя" type="text">
+            
+                      
+                        <input placeholder="Email" type="email" id="email" name="email" disabled>
+            
+    
+                        <textarea placeholder="Введите ваше сообщение здесь..." id="message" rows="4"></textarea>
+
+                        <button class="btn2">Отправить</button>
+                    </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="icon-footer">
+            <button>
+                <img width="25px" height="25px" src="icon/Vk-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/telegram-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/tik-tok-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/youtube-white.svg"/>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

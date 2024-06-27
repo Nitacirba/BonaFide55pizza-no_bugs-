@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - BonaFide Pizza</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <img class="fon-fixed">
+    <header>
+        <nav>
+            <div class="popup">
+                <img src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+                <div class="stobi-bilo"></div>
+                <button class="btn" onclick="toggleMenu()">
+                    <span id="bar1"></span>
+                    <span id="bar2"></span>
+                    <span id="bar3"></span>
+                </button>
+            
+                    
+                </div>
+                <div class="popup-menu" id="popupMenu">
+                    <a href="index.html">Главная</a>
+                    <a href="menu.html">Меню</a>
+                    <a href="pizza.html">Пиццы</a>
+                    <a href="info.html">О нас</a>
+                    <a href="contact.html">Контакты</a>
+                </div>
+            </div>
+            <img class="menu-desk" src="img\logo.png" alt="Логотип" id="logo" onclick="logo()"/>
+            <a class="menu-desk" href="index.html">Главная</a>
+            <a class="menu-desk" href="menu.html">Меню</a>
+            <a class="menu-desk" href="pizza.html">Пиццы</a>
+            <a class="menu-desk" href="info.html">О нас</a>
+            <a class="menu-desk" href="#">Контакты</a>
+    
+            <div class="icon-buttons">
+                <button>
+                    <img width="20px" height="20px" src="icon/Vk-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/telegram-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/tik-tok-white.svg"/>
+                </button>
+                <button>
+                    <img width="20px" height="20px" src="icon/youtube-white.svg"/>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+
+<main>
+        <div class="main-container">
+            <div class="horizontal-menu">
+                <a href="#" onclick="changeContent('content1', event)">Пицца</a>
+                <a href="#" onclick="changeContent('content2', event)">Кусок пиццы</a>
+                <a href="#" onclick="changeContent('content3', event)">Пиццевый рулет</a>
+                <a href="#" onclick="changeContent('content4', event)">Упаковка</a>
+                <a href="#" onclick="changeContent('content5', event)">Начинки</a>
+            </div>
+            <div class="content-area" id="div1">
+                <div class="content" id="content1">
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Диабло</h2>
+                            <p>Острая чоризо, острый перец халапеньо, соус барбекю, митболы из говядины, томаты, сладкий перец, красный лук, моцарелла, фирменный томатный соус</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">519₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Гавайская</h2>
+                            <p>Свежие помидоры, чеснок, красный лук, сыр, фарш, одуванчик, оливки.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">289₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>От моря</h2>
+                            <p>Оливки, мета, кальмары, креветки, свежие грибы, свежие красные помидоры, сыр.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">650₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Овощи и грибы</h2>
+                            <p>Шампиньоны, томаты, сладкий перец, красный лук, кубики брынзы, моцарелла, фирменный томатный соус, итальянские травы</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">469₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Ветчина и сыр</h2>
+                            <p>Ветчина, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">369₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Пепперони</h2>
+                            <p>Помидор, орегано, чеснок, оливковое масло, пепперони, сыр, красный лук, соус, грибы.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">419₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Карбонара</h2>
+                            <p>Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">519₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Четыре сыра</h2>
+                            <p>Сыр блю чиз, смесь сыров чеддер и пармезан, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">469₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Маргарита</h2>
+                            <p>Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">419₽</div></div>
+                    </div>
+                </div>
+
+                <div class="content" id="content2" style="display: none;">
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Диабло</h2>
+                            <p>Острая чоризо, острый перец халапеньо, соус барбекю, митболы из говядины, томаты, сладкий перец, красный лук, моцарелла, фирменный томатный соус</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">79₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Гавайская</h2>
+                            <p>Свежие помидоры, чеснок, красный лук, сыр, фарш, одуванчик, оливки.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">62₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>От моря</h2>
+                            <p>Оливки, мета, кальмары, креветки, свежие грибы, свежие красные помидоры, сыр.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">79₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Овощи и грибы</h2>
+                            <p>Шампиньоны, томаты, сладкий перец, красный лук, кубики брынзы, моцарелла, фирменный томатный соус, итальянские травы</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">59₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Ветчина и сыр</h2>
+                            <p>Ветчина, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">59₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Пепперони</h2>
+                            <p>Помидор, орегано, чеснок, оливковое масло, пепперони, сыр, красный лук, соус, грибы.</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">62₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Карбонара</h2>
+                            <p>Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">79₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Четыре сыра</h2>
+                            <p>Сыр блю чиз, смесь сыров чеддер и пармезан, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">79₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Маргарита</h2>
+                            <p>Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">59₽</div></div>
+                    </div>
+
+                </div>
+                <div class="content" id="content3" style="display: none;">
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Диабло</h2>
+                            <p>Острая чоризо, острый перец халапеньо, соус барбекю, митболы из говядины, томаты, сладкий перец, красный лук, моцарелла, фирменный томатный соус</p>
+                        </div>
+                        <div class="roll-vibor">
+                            <div class="roll-sh">
+                                <div class="kol-sh">3 шт.</div>
+                                <div class="pod-menu-price">249₽</div>
+                            </div>
+                            <div class="roll-sh">
+                                <div class="kol-sh">6 шт.</div>
+                                <div class="pod-menu-price">359₽</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Четыре сыра</h2>
+                            <p>Сыр блю чиз, смесь сыров чеддер и пармезан, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="roll-vibor">
+                            <div class="roll-sh">
+                                <div class="kol-sh">3 шт.</div>
+                                <div class="pod-menu-price">249₽</div>
+                            </div>
+                            <div class="roll-sh">
+                                <div class="kol-sh">6 шт.</div>
+                                <div class="pod-menu-price">359₽</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Ветчина и сыр</h2>
+                            <p>Ветчина, моцарелла, фирменный соус альфредо</p>
+                        </div>
+                        <div class="roll-vibor">
+                            <div class="roll-sh">
+                                <div class="kol-sh">3 шт.</div>
+                                <div class="pod-menu-price">249₽</div>
+                            </div>
+                            <div class="roll-sh">
+                                <div class="kol-sh">6 шт.</div>
+                                <div class="pod-menu-price">359₽</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Овощи и грибы</h2>
+                            <p>Шампиньоны, томаты, сладкий перец, красный лук, кубики брынзы, моцарелла, фирменный томатный соус, итальянские травы</p>
+                        </div>
+                        <div class="roll-vibor">
+                            <div class="roll-sh">
+                                <div class="kol-sh">3 шт.</div>
+                                <div class="pod-menu-price">249₽</div>
+                            </div>
+                            <div class="roll-sh">
+                                <div class="kol-sh">6 шт.</div>
+                                <div class="pod-menu-price">359₽</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content" id="content4" style="display: none;">
+                    
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Кусочек</h2>
+                            <p>Коробка для одного кусочка пиццы</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">22₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Начинки</h2>
+                            <p>Коробка для всех видов дополнительных начинок</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">22₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Семейная</h2>
+                            <p>Коробка для большой пиццы на всю семью</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">35₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Стандарт</h2>
+                            <p>Коробка для пиццы стандартного размера. Невероятно удобная и стильная!</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">30₽</div></div>
+                    </div>
+
+                </div>
+                <div class="content" id="content5" style="display: none;">
+                    
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Овощи</h2>
+                            <p>Рукола, кукуруза, петрушка, фасоль, помидоры, перец</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">39₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Соусы</h2>
+                            <p>Томатный, Сливочно-чесночный, Барбекю, Песто, Грибной, Альфредо</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">29₽</div></div>
+                    </div>
+
+                    <div class="pod-menu">
+                        <div class="pod-menu-name">
+                            <h2>Сыры</h2>
+                            <p>Моцарелла, Чеддер, Пармезан, Гауда, Фета</p>
+                        </div>
+                        <div class="box-price"><div class="pod-menu-price">69₽</div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</main>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="icon-footer">
+            <button>
+                <img width="25px" height="25px" src="icon/Vk-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/telegram-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/tik-tok-white.svg"/>
+            </button>
+            <button>
+                <img width="25px" height="25px" src="icon/youtube-white.svg"/>
+            </button>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
